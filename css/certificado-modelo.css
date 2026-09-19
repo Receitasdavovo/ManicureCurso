@@ -1,0 +1,788 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #eee7e5;
+    color: #30252a;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   PAINEL DE CONTROLE
+===================================================== */
+
+.painel-controle {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #30252a;
+}
+
+.btn-imprimir,
+.btn-voltar {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-imprimir {
+    background: #c59b5b;
+    color: #ffffff;
+}
+
+.btn-imprimir:hover {
+    background: #a98248;
+    transform: translateY(-2px);
+}
+
+.btn-voltar {
+    background: #ffffff;
+    color: #30252a;
+}
+
+.btn-voltar:hover {
+    background: #f8e8ee;
+}
+
+
+/* =====================================================
+   PÁGINA A4
+===================================================== */
+
+.pagina {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =====================================================
+   CERTIFICADO
+===================================================== */
+
+.certificado {
+    position: relative;
+
+    width: 1123px;
+    height: 794px;
+
+    max-width: 100%;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.95),
+            rgba(255,250,248,1)
+        );
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(48, 37, 42, 0.22);
+
+    border: 8px solid #c59b5b;
+}
+
+
+/* =====================================================
+   BORDAS
+===================================================== */
+
+.borda-externa {
+    position: absolute;
+
+    inset: 12px;
+
+    border: 2px solid #c59b5b;
+
+    pointer-events: none;
+}
+
+
+.borda-interna {
+    position: absolute;
+
+    inset: 23px;
+
+    border: 1px solid #d9b878;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   DETALHES DECORATIVOS
+===================================================== */
+
+.flor {
+    position: absolute;
+
+    color: #c59b5b;
+
+    font-size: 65px;
+
+    opacity: 0.18;
+
+    z-index: 1;
+}
+
+.flor-1 {
+    top: 35px;
+    left: 55px;
+}
+
+.flor-2 {
+    right: 55px;
+    bottom: 35px;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.cabecalho-certificado {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    padding-top: 55px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-certificado {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    line-height: 1;
+}
+
+
+.logo-certificado span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 7px;
+
+    font-weight: 700;
+
+    color: #30252a;
+}
+
+
+.logo-certificado strong {
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    letter-spacing: 9px;
+
+    color: #c59b5b;
+}
+
+
+/* =====================================================
+   LINHA DOURADA
+===================================================== */
+
+.linha-dourada {
+    width: 100px;
+
+    height: 2px;
+
+    margin: 20px auto 15px;
+
+    background: #c59b5b;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.cabecalho-certificado h1 {
+    font-size: 48px;
+
+    letter-spacing: 10px;
+
+    font-weight: 500;
+
+    color: #30252a;
+}
+
+
+.subtitulo {
+    margin-top: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: #a85d78;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+.conteudo-certificado {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    padding: 25px 100px 0;
+}
+
+
+.texto-introducao {
+    font-size: 18px;
+
+    font-style: italic;
+
+    color: #746b70;
+}
+
+
+.nome-aluno {
+    margin-top: 8px;
+
+    font-size: 32px;
+
+    color: #a85d78;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+
+.linha-nome {
+    width: 430px;
+
+    max-width: 80%;
+
+    height: 1px;
+
+    margin: 7px auto 18px;
+
+    background: #d7c2a0;
+}
+
+
+.texto-certificado {
+    font-size: 16px;
+
+    color: #746b70;
+}
+
+
+.nome-curso {
+    margin-top: 8px;
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    color: #30252a;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   DESCRIÇÃO
+===================================================== */
+
+.descricao {
+    max-width: 780px;
+
+    margin: 14px auto 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #746b70;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES
+===================================================== */
+
+.informacoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 18px auto 22px;
+
+    max-width: 850px;
+}
+
+
+.info-item {
+    min-width: 190px;
+
+    padding: 12px 18px;
+
+    border: 1px solid #eadcdf;
+
+    background: rgba(255,255,255,0.75);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.icone {
+    color: #c59b5b;
+
+    font-size: 17px;
+}
+
+
+.info-item div {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+.info-item small {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    color: #746b70;
+
+    font-weight: 700;
+}
+
+
+.info-item strong {
+    margin-top: 3px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    color: #30252a;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.rodape-certificado {
+    display: grid;
+
+    grid-template-columns: 1fr 150px 1fr;
+
+    align-items: end;
+
+    gap: 45px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   ASSINATURAS
+===================================================== */
+
+.assinatura,
+.instituicao {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.linha-assinatura {
+    width: 210px;
+
+    height: 1px;
+
+    background: #8e7c82;
+
+    margin-bottom: 8px;
+}
+
+
+.assinatura strong,
+.instituicao strong {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #30252a;
+}
+
+
+.assinatura span,
+.instituicao span {
+    margin-top: 3px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    color: #746b70;
+}
+
+
+/* =====================================================
+   QR CODE
+===================================================== */
+
+.qr-area {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.qr-placeholder {
+    width: 78px;
+
+    height: 78px;
+
+    border: 3px solid #30252a;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    background: #ffffff;
+}
+
+
+/* decoração do QR */
+
+.qr-placeholder::before,
+.qr-placeholder::after {
+    content: "";
+
+    position: absolute;
+
+    width: 16px;
+
+    height: 16px;
+
+    border: 4px solid #30252a;
+}
+
+
+.qr-placeholder::before {
+    top: 8px;
+    left: 8px;
+}
+
+
+.qr-placeholder::after {
+    bottom: 8px;
+    right: 8px;
+}
+
+
+.qr-placeholder span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #30252a;
+}
+
+
+.qr-area small {
+    margin-top: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    color: #746b70;
+}
+
+
+.qr-area strong {
+    margin-top: 2px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    color: #a85d78;
+}
+
+
+/* =====================================================
+   CÓDIGO FINAL
+===================================================== */
+
+.codigo-final {
+    margin-top: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    color: #746b70;
+
+    letter-spacing: 0.5px;
+}
+
+
+.codigo-final strong {
+    color: #30252a;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .pagina {
+        padding: 20px;
+    }
+
+    .certificado {
+        height: auto;
+
+        min-height: 700px;
+    }
+
+    .conteudo-certificado {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .informacoes {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .painel-controle {
+        flex-direction: column;
+    }
+
+    .btn-imprimir,
+    .btn-voltar {
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+    }
+
+    .pagina {
+        padding: 10px;
+    }
+
+    .certificado {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 900px;
+    }
+
+    .cabecalho-certificado {
+        padding-top: 45px;
+    }
+
+    .cabecalho-certificado h1 {
+        font-size: 34px;
+
+        letter-spacing: 5px;
+    }
+
+    .subtitulo {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+    .conteudo-certificado {
+        padding: 25px 30px;
+    }
+
+    .nome-aluno {
+        font-size: 23px;
+    }
+
+    .nome-curso {
+        font-size: 19px;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .info-item {
+        width: 100%;
+    }
+
+    .rodape-certificado {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .qr-area {
+        order: 2;
+    }
+
+    .assinatura {
+        order: 1;
+    }
+
+    .instituicao {
+        order: 3;
+    }
+
+}
+
+
+/* =====================================================
+   IMPRESSÃO / PDF
+===================================================== */
+
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
+
+@media print {
+
+    body {
+        background: #ffffff;
+    }
+
+    .painel-controle {
+        display: none;
+    }
+
+    .pagina {
+        width: 297mm;
+
+        height: 210mm;
+
+        padding: 0;
+
+        margin: 0;
+
+        display: block;
+    }
+
+    .certificado {
+        width: 297mm;
+
+        height: 210mm;
+
+        max-width: none;
+
+        box-shadow: none;
+
+        border: 8px solid #c59b5b;
+
+        page-break-after: always;
+    }
+
+    .borda-externa {
+        inset: 12px;
+    }
+
+    .borda-interna {
+        inset: 23px;
+    }
+
+    .cabecalho-certificado {
+        padding-top: 55px;
+    }
+
+    .conteudo-certificado {
+        padding-left: 100px;
+
+        padding-right: 100px;
+    }
+
+}

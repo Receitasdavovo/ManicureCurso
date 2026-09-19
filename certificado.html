@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Validar Certificado - Studio Bella Nails</title>
+
+    <link rel="stylesheet" href="css/certificado.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="topo">
+
+        <div class="logo">
+            STUDIO BELLA
+            <span>NAILS</span>
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         ÁREA PRINCIPAL
+    ========================================== -->
+
+    <main class="pagina-validacao">
+
+        <section class="validacao-box">
+
+            <a href="index.html" class="btn-fechar-box">
+                &times;
+            </a>
+
+            <h1>
+                Validação de Certificado
+            </h1>
+
+            <p>
+                Consulte a autenticidade do seu certificado
+            </p>
+
+
+            <!-- =========================================
+                 FORMULÁRIO
+            ========================================== -->
+
+            <form id="validationForm">
+
+                <label for="codigo">
+                    Código de autenticação
+                </label>
+
+                <input
+                    type="text"
+                    id="codigo"
+                    placeholder="Ex: CERT-2026-000001"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">
+                    Validar Certificado
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================================
+             RESULTADO
+        ========================================== -->
+
+        <div
+            id="resultado"
+            class="resultado">
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         BIBLIOTECA QR CODE
+    ========================================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+    <!-- =========================================
+         SEU JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/certificado.js"></script>
+
+</body>
+
+</html>
