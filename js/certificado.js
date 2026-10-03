@@ -12,7 +12,7 @@ const certificados = {
 
     "CERT-2026-000001": {
 
-        nome: "Valdirene Alves",
+        nome: "Valdirene Al",
 
         certificado: "Manicure Profissional",
 
