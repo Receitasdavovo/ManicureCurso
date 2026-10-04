@@ -29,7 +29,7 @@ const certificados = {
 
     "CERT-2026-000002": {
 
-        nome: "Samuel Levindo",
+        nome: "Luana Silva Coimbra",
 
         certificado: "Pedicure Profissional",
 
