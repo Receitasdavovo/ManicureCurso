@@ -12,7 +12,7 @@ const certificados = {
 
     "CERT-2026-000001": {
 
-        nome: "Maria Eduarda de Paiva silva",
+        nome: "Maria Juliana",
 
         certificado: "Manicure Profissional",
 
@@ -59,17 +59,17 @@ const certificados = {
         emissor: "Studio Bella Nails"
 
     },
-      "CERT-2026-000005": {
+      "CERT-2026-00022": {
 
         nome: "Maria Eduarda de Paiva silva",
 
-        certificado: "Manicure Profissional",
+        certificado: "Nail Art Profissional",
 
         cargaHoraria: "40 horas",
 
         dataEmissao: "05/10/2026",
 
-        codigo: "CERT-2026-000001",
+        codigo: "CERT-2026-00022",
 
         emissor: "Studio Bella Nails"
 
