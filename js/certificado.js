@@ -18,7 +18,7 @@ const certificados = {
 
         cargaHoraria: "40 horas",
 
-        dataEmissao: "05/10/2026",
+        dataEmissao: "03/10/2026",
 
         codigo: "CERT-2026-000001",
 
