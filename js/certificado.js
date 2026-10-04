@@ -58,6 +58,21 @@ const certificados = {
 
         emissor: "Studio Bella Nails"
 
+    },
+      "CERT-2026-000005": {
+
+        nome: "Maria Eduarda de Paiva silva",
+
+        certificado: "Manicure Profissional",
+
+        cargaHoraria: "40 horas",
+
+        dataEmissao: "05/10/2026",
+
+        codigo: "CERT-2026-000001",
+
+        emissor: "Studio Bella Nails"
+
     }
 
 };
