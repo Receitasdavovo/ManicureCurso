@@ -10,7 +10,7 @@
 
 const certificados = {
 
-    "CERT-2026-000001": {
+    "CERT-2026-00001": {
 
         nome: "Maria Juliana",
 
