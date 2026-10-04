@@ -63,7 +63,7 @@ const certificados = {
 
         nome: "Maria Eduarda de Paiva silva",
 
-        certificado: "Nail Art Profissional Duda Nails design",
+        certificado: "Duda Nails Design",
 
         cargaHoraria: "40 horas",
 
